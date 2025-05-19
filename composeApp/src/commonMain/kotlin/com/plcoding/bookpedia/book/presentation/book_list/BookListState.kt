@@ -5,25 +5,9 @@ import com.plcoding.bookpedia.core.presentation.UiText
 
 data class BookListState(
     val searchQuery: String = "",
-    val searchResult: List<Book> = books,
+    val searchResult: List<Book> = emptyList(),
     val favoriteBooks: List<Book> = emptyList(),
-    val isLoading: Boolean = false,
+    val isLoading: Boolean = true,
     val selectedTabIndex: Int = 0,
     val errorMessage: UiText? = null
     )
-
-val books = (1..100).map {
-    Book(
-        id = it.toString(),
-        title = "Book $it",
-        imageUrl = "https://test.com",
-        authors = listOf("Philip Lackner", "Meynisa Nur"),
-        description = "Description $it",
-        languages = emptyList(),
-        firstPublishYear = null,
-        averageRating = 4.844567,
-        ratingCount = 5,
-        numPages = 120,
-        numEditions = 3
-    )
-}

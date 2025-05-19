@@ -8,7 +8,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.plcoding.bookpedia.book.domain.Book
 import com.plcoding.bookpedia.book.presentation.book_list.BookListScreen
 import com.plcoding.bookpedia.book.presentation.book_list.BookListState
-import com.plcoding.bookpedia.book.presentation.book_list.books
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookSearchBar
 
 @Preview(showBackground = true)
@@ -22,6 +21,22 @@ private fun BookSearchBarPreview() {
             modifier = Modifier.fillMaxWidth()
         )
     }
+}
+
+private val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "https://test.com",
+        authors = listOf("Philip Lackner", "Meynisa Nur"),
+        description = "Description $it",
+        languages = emptyList(),
+        firstPublishYear = null,
+        averageRating = 4.844567,
+        ratingCount = 5,
+        numPages = 120,
+        numEditions = 3
+    )
 }
 
 @Preview
