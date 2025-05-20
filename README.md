@@ -59,16 +59,17 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 1. Open the `androidApp` module in Android Studio
 2. Run the `composeApp` configuration on an emulator or device
 
-##iOS
+## iOS
 1. Open iosApp/iosApp.xcodeproj in Xcode.
 2. Build and run on a simulator or device
 
-##Desktop
+## Desktop
 Run the desktopApp module via terminal
    `./gradlew run`
 
-###Project Structure 📂
-`Bookpedia/
+### Project Structure 📂
+```
+Bookpedia/
 ├── shared/               # Shared KMP module
 │   ├── src/
 │   │   ├── commonMain/   # Shared code (ViewModels, UseCases, etc.)
@@ -78,12 +79,13 @@ Run the desktopApp module via terminal
 ├── androidApp/           # Android UI module (Jetpack Compose)
 ├── iosApp/               # iOS UI module (SwiftUI)
 ├── desktopApp/           # Desktop UI module (Compose for Desktop)
-└── build.gradle.kts      # Root Gradle configuration`
+└── build.gradle.kts      # Root Gradle configuration
+```
 
-###License 📄
+### License 📄
 Distributed under the MIT License. See `LICENSE` for details.
 
-###Reference
+### Reference
 Reference by https://www.youtube.com/watch?v=WT9-4DXUqsM
 
 Made with ❤️ by [Meynisa].
