@@ -88,5 +88,6 @@ Distributed under the MIT License. See `LICENSE` for details.
 ### Reference
 Reference by https://www.youtube.com/watch?v=WT9-4DXUqsM
 
-Made with ❤️ by [Meynisa].
+Made by [Meynisa].
+
 Acknowledgments to [Open Library API](https://openlibrary.org) for book data.
